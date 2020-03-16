@@ -1,0 +1,14 @@
+.nav-swiper{
+  width:100%;
+}
+.nav-swiper swiper{
+  width:100%;
+  overflow: hidden;
+}
+.nav-swiper swiper-item{
+  width:100%;
+  overflow: hidden;
+}
+.nav-swiper swiper swiper-item image{
+  width:100%;
+}

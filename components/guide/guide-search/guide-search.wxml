@@ -1,0 +1,13 @@
+<!--components/guide/guide-search/guide-search.wxml-->
+<view class="guide-search">
+  <view class="search-container guide-search-panel-btn">
+    <view class="search-bar">
+        <view class="search-input">
+          <view class="search-position">
+            <mp-icon extClass="my-search" icon="search" size="{{18}}"></mp-icon>
+            搜索目的地
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--component/detail-suite-nav/detail-suite-nav.wxml-->
+<view class="choose-suite-nav choose-suite-common">
+  <view>选择套餐</view>
+  <button wx:for="{{group}}" data-group-id="{{item.groupId}}" data-stat="{{item.stat}}" class="{{index===0?' choose-suite-label active':'choose-suite-label '}}" bindtap="handleTap" disabled="{{item.stat === 3}}">
+    {{item.groupName}} 
+  </button>
+  <!-- <button data-group-id="" data-stat="{{item.stat}}" class="choose-suite-label">
+    上海领区：个人单次旅游签证
+  </button>
+  <button data-group-id="" data-stat="{{item.stat}}" class="choose-suite-label disable">
+    南方航空券
+  </button> -->
+</view>

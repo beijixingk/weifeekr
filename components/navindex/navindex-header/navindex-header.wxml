@@ -1,0 +1,5 @@
+<view class="common-header">
+  <text class="commonent-header-line"></text>
+  <text class="commonent-header-type">{{title}}</text>
+  <text class="commonent-header-add">{{desc}}</text>
+</view>

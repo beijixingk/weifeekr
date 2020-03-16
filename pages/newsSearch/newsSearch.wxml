@@ -1,0 +1,62 @@
+<!--pages/newsSearch/newsSearch.wxml-->
+<view class="search-wrap">
+  <view class="search-container">
+    <view class="search-box">
+      <view class="back">
+        <mp-icon icon="back2" color="#ccc" size="{{30}}"></mp-icon>
+      </view>
+      <view class="search-bar">
+        <view class="search-input guide-search-form">
+          <input type="search" class="search-position" placeholder="搜索目的地" id="search-site" bindconfirm="submitSearch"/>
+          <view class="close">
+            <mp-icon icon="close2" color="#cdcdcd" type="field"></mp-icon>
+          </view>
+        </view>
+      </view>
+      <view class="btn-box">
+        <view class="search-btn">搜索</view>
+      </view>
+    </view>
+  </view>
+  <view class="search-result">
+    <view class="drop-list">
+      <view class="li" wx:for="{{searchList}}" wx:key="index">
+        <view class="scenic-item search-keyword">{{item.site}}
+          <text class="area">{{item.area}}</text>
+          <view class="arrow">
+            <mp-icon icon="arrow" color="#999" size="{{10}}"></mp-icon>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="recent-search">
+    <view class="search-tag-panel recent-search-panel">
+      <view class="header-title-wrap">
+        <text>-</text>
+        <text class="view-title">最近搜索</text>
+        <text>-</text>
+      </view>
+      <view href="" class="del-search-btn">
+        <mp-icon icon="delete" color="#999" size="{{25}}"></mp-icon>
+      </view>
+      <view class="tag-container">
+        <view class="tag-item search-keyword" data-id="" data-keyword="我们">我们</view>
+        <view class="tag-item search-keyword" data-id="6170" data-keyword="上海">上海</view>
+        <view class="tag-item search-keyword" data-id="" data-keyword="深">深</view>
+      </view>
+    </view>
+  </view>
+  <view class="hot-search">
+    <view class="search-tag-panel hot-search-panel">
+      <view class="header-title-wrap">
+        <text>-</text>
+        <text class="view-title">热门搜索</text>
+        <text>-</text>
+      </view>
+      <view class="tag-container">
+        <view wx:for="{{keywordList}}" wx:key="id" class="tag-item search-keyword" id="{{item.id}}">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="columnnew">
+  <view class="column-head">
+    <view class="head-top">
+      <image src="{{news.cover}}"></image>
+    </view>
+    <view class="head-bottom">
+      <view class="head-author">
+        <view class="author-img">
+          <image src="{{news.avatar}}" mode="aspectFit"></image>
+        </view>
+      </view>
+      <view class="author-name">{{news.name}}</view>
+      <view class="btn">订阅</view>
+    </view>
+    <view class="column-tab">
+      <view class="tab {{kind=='new' ? 'active' : ''}}" data-kind="new" bindtap="changeTab">最新</view>
+      <view>|</view>
+      <view class="tab {{kind=='hot' ? 'active' : ''}}" data-kind="hot" bindtap="changeTab">热门</view>
+    </view>
+  </view>
+  <column-list id="list" kind="{{kind}}" flag="{{flag}}"></column-list>
+</view>

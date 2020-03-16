@@ -1,0 +1,14 @@
+<view class="like-item" wx:if="{{likelist.length}}">
+  <navigator wx:for="{{likelist}}" wx:key="id" url="/pages/detail/detail?id={{item.id}}" class="common-goods maybe-like-item">
+    <image src="{{item.cover}}" mode="widthFill" class="common-goods-img lazyloaded"/>
+    <view class="common-goods-content one-line-ellipsis">{{item.productName}}</view>
+    <view class="common-goods-price">
+      <text class="common-goods-num">¥ {{item.currentPrice}} </text>起
+      <text class="common-goods-unit">
+        <text class="common-goods-bold">/{{item.unitCount-1 > 0 ?item.unitCount:''}}</text>晚</text>
+    </view>
+  </navigator> 
+</view>
+<view wx:else>
+  <mp-loading type="circle"/>
+</view>

@@ -1,0 +1,18 @@
+<!--components/guide/path-item/path-item.wxml-->
+<view class="theme-item theme-item-path {{num==0?'margin-top':''}}">
+  <view class="thumb-wrap clearfix">
+    <image 
+      mode="widthFix"
+      wx:for="{{path.cover}}"
+      wx:key="index"
+      src="{{item}}!200X200" 
+      style="display: block;"
+    />
+  </view>
+  <view class="content">
+    <span>{{path.title}}</span>
+    <view class="path-txt">
+      路线包括：{{pathTxt}}
+    </view>
+  </view>
+</view>

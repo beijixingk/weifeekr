@@ -1,0 +1,27 @@
+/* components/guide/guide-search/guide-search.wxss */
+.search-container {
+  background: #fff;
+  padding: 48rpx 24rpx;
+}
+.search-bar {
+  width: 100%;
+}
+.search-input {
+  position: relative;
+  width: 100%;
+  background: #F5F5F5;
+  border-radius: 96rpx;
+  padding: 7.2rpx 19.2rpx 7.2rpx 7.2rpx;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  font-size: 24rpx;
+  box-sizing: content-box;
+}
+.search-position{
+  padding: 12rpx 0;
+  display: block;
+  width: 100%;
+  line-height: 1.6;
+  background: transparent;
+}

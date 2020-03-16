@@ -1,0 +1,5 @@
+<!--components/detail/detail-wx/detail-wx.wxml-->
+<view class="product-detail-wxcs">
+  <view class="h4">客服微信</view>
+  <view class="p">【注】关于产品有任何咨询需求，都可添加客服微信：feekr_cs3（国内度假），feekr5566（出境度假）</view>
+</view>

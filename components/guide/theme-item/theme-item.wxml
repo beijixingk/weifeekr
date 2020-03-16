@@ -1,0 +1,13 @@
+<!--components/guide/theme-item/theme-item.wxml-->
+<view class="theme-item theme-item-city {{num==0?'margin-top':''}}">
+  <view class="thumb-wrap">
+    <image src="{{theme.cover}}!640X270" style="display: block;"/>
+  </view>
+  <view class="theme-desc">
+    <view class="content">{{theme.title}}</view>
+    <view class="style-tag">
+      <text class="series font-md regular-font">{{theme.recommendCount}}大推荐</text>
+    </view>
+  </view>
+  <view class="cover"></view>
+</view>

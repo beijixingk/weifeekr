@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Calendar":"/components/navindex/calendar/calendar",
+    "suite-nav":"/components/navindex/detail-suite-nav/detail-suite-nav",
+    "suite-detail":"/components/detail-suite/detail-suite-pick/detail-suite-pick"
+  }
+}

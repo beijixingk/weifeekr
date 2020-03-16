@@ -1,0 +1,7 @@
+<view class="nav-swiper">
+  <swiper indicator-dots="{{true}}" circular indicator-active-color="#fff" indicator-color="rgba(0,0,0,0.2)" autoplay="true" style="height:{{imgHeight}}rpx;" bindchange="bindchange">
+    <swiper-item wx:for="{{swiperlist}}" wx:key="a">
+      <image src="{{item.cover}}" mode="scaleToFill" bindload="imageLoad"></image>
+    </swiper-item>
+  </swiper>
+</view>

@@ -1,0 +1,46 @@
+/* pages/home/newdetail/newdetail.wxss */
+.newdetail{
+  padding: 10px;
+}
+.title{
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d2d2d;
+}
+.author{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.author-left{
+  color: #666;
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 0;
+  width: 90px;
+}
+.author-left image{
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.author-left text{
+  color: #666;
+  font-size: 12px;
+}
+.author-right{
+  font-size: 12px;
+  color: #666;
+  padding-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.author-right > view{
+  width: 51px;
+  padding: 0px 3px 0 0;
+}

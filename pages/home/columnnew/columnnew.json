@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "column-list":"../../../components/homeComponents/columnlist/columnlist"
+  }
+}

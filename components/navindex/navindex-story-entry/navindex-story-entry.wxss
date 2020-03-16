@@ -1,0 +1,30 @@
+/* component/navindex-story-entry/navindex-story-entry.wxss */
+.story-entry-item {
+    margin-top: 30rpx;
+    padding-bottom: 24rpx;
+    border-bottom: 1rpx solid #e8e8e8;
+}
+.story-entry-link {
+    display: flex;
+}
+.story-entry-pic {
+    /* width: 282rpx; */
+    height: 188rpx;
+    margin-right: 35rpx;
+}
+.story-entry-describe {
+    font-size: 26rpx;
+    line-height: 44rpx;
+    color: #2d2d2d;
+}
+.three-line-ellipsis, .two-line, .two-line-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.story-entry-labes {
+    margin-top: 35rpx;
+    font-size: 18rpx;
+    /* line-height: 1em; */
+    color: #888;
+}

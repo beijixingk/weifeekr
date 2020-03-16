@@ -1,0 +1,35 @@
+/* components/ProSearch/ProSearch.wxss */
+.search-gate-box{
+  position: relative;
+  padding: 30rpx 2%;
+  border-bottom: 1rpx solid #e6e6e6;
+  background-color: #fff;
+}
+.search-gate-entrance {
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+  border-radius: 28rpx;
+  color: #000;
+  background-color: #f6f6f6;
+}
+.search-gate-icon{
+  flex-shrink: 0;
+  margin-right: 12rpx;
+  margin-top:-5rpx;
+}
+.search-gate-input {
+  flex-grow: 1;
+  outline-offset: 0;
+  line-height: inherit;
+  font-size:24rpx;
+}
+.search-gate-clear {
+  flex-shrink: 0;
+  line-height: inherit;
+  color: #999;
+}
+.search-placeholder{
+  font-size:24rpx;
+}

@@ -1,0 +1,9 @@
+<view class="product-detail-head">
+  <view class="product-detail-art">{{detailheader.productDesc}}</view>
+  <view class="product-detail-name">{{detailheader.productName}}</view>
+  <view class="product-detail-price" style="color: rgb(26, 188, 156);">
+    <text class="price">¥{{detailheader.productPrice}}</text>
+    <text class="unit"> 起/{{detailheader.productUnitCount -1 ? detailheader.productUnitCount :''}}{{detailheader.productUnit}}</text>
+    <!---->
+  </view>
+</view>

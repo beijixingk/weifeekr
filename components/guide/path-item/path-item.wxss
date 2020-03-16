@@ -1,0 +1,39 @@
+/* components/guide/path-item/path-item.wxss */
+.theme-item-path {
+  margin: 0;
+  border: none;
+  padding: 48rpx 0;
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.thumb-wrap {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 24rpx;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+.thumb-wrap image {
+  width: 32%;
+  margin-left:2%;
+}
+.thumb-wrap image:first-child{
+  margin-left:0;
+}
+.theme-item .content {
+  line-height: 150%;
+  font-size: 28rpx;
+  color: #333;
+}
+.content .path-txt {
+  color: #333;
+  font-size: 26rpx;
+  margin-top: 24rpx;
+}
+.margin-top{
+  margin-top:0;
+}

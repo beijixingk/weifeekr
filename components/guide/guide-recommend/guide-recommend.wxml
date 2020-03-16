@@ -1,0 +1,15 @@
+<!--components/guide/guide-recommend/guide-recommend.wxml-->
+<view class="season-recommend">
+  <view class="header-title-wrap">
+    <text>-</text>
+    <text class="section-title">当季小众推荐</text>
+    <text>-</text>
+  </view>
+  <view class="item-container">
+    <view wx:for="{{cityRecommendList}}" wx:key="scenic" class="item" id="{{item.scenic}}" bindtap="goToDetail">
+      <image mode="widthFix" src="{{item.cover}}!621X327"/>
+      <view class="item-title">{{item.cityName}}</view>
+      <view class="item-desc city-desc">{{item.desc}}</view>
+    </view>
+  </view>
+</view>

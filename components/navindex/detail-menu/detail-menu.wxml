@@ -1,0 +1,4 @@
+<div class="product-detail-menu">
+  <text class="menu1">选择套餐/有效期</text>
+  <mp-icon type="outline" icon="arrow" size="12" class="iconfont icon-jiantou"/>
+</div>

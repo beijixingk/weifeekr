@@ -1,0 +1,18 @@
+<view class="product-detail-guess">
+  <view class="recommend">
+    <view class="product-detail-guess-title">猜你喜欢</view>
+    <view class="recommend-goods">
+      <view class="recommend-goods-item" wx:for="{{likelist}}" wx:key="id">
+        <navigator url="/pages/detail/detail?id={{item.productId}}" class="common-goods recommend-item">
+          <image src="{{item.productCover+'!400X250'}}" class="common-goods-img lazyloaded" mode="widthFix"/>
+          <view class="common-goods-content one-line-ellipsis">{{item.productName}}</view>
+          <view class="common-goods-price">
+            <text class="common-goods-num">¥ {{item.productPrice}} </text>起
+            <text class="common-goods-unit">
+              <text class="common-goods-bold">/{{item.productUnitCount-1? item.productUnitCount :''}}</text>{{item.productUnit}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

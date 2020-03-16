@@ -1,0 +1,8 @@
+<!--component/navindex-theme-entry-item/navindex-theme-entry-item.wxml-->
+<view class="theme-entry-item" wx:for="{{themelist}}" wx:key="id">
+  <navigator url="/pages/detail/detail?id={{item.id}}" class="theme-entry-link">
+    <image src="{{item.cover}}" class="theme-entry-img lazyloaded" mode="aspectFix"/>
+    <text class="theme-entry-content">{{item.name}}</text>
+    <view class="temp"></view>
+  </navigator>
+</view>

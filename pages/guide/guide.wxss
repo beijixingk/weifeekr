@@ -1,0 +1,5 @@
+/* pages/guide/guide.wxss */
+.guide-wrap{
+  background: #f6f6f6;
+  height: 100vh;
+}

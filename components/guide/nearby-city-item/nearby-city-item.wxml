@@ -1,0 +1,8 @@
+<!--components/guide/nearby-city-item/nearby-city-item.wxml-->
+<view class="flex-item">
+  <image mode="widthFix" src="{{nearbyCity.cover}}!300X225" style="display: block;"/>
+  <view class="item-title">{{nearbyCity.name}}</view>
+  <view class="item-title">距离
+    <text>{{nearbyCity.distance}}</text> 公里
+  </view>
+</view>

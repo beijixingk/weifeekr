@@ -1,0 +1,10 @@
+<!--component/navindex-story-entry/navindex-story-entry.wxml-->
+<view class="story-entry-item" wx:for="{{list}}" wx:key="id">
+  <navigator url="/detail/{{item.id}}" class="story-entry-link">
+      <image src="{{item.cover}}" class="story-entry-pic lazyloaded" mode="widthFill"/>
+    <view>
+      <text class="story-entry-describe three-line-ellipsis">{{item.title}}</text>
+      <view class="story-entry-labes"><text wx:for="{{item.tags}}" wx:key="item">{{item}} </text></view>
+    </view>
+  </navigator>
+</view>

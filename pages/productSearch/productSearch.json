@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search-bar": "../../components/proSearch/ProSearch",
+    "mp-icon": "../../weui-miniprogram/icon/icon"
+  }
+}

@@ -1,0 +1,17 @@
+<view class="morecolumn">
+  <scroll-view>
+    <view class="column-container">
+      <view 
+        class="column-item" 
+        wx:for="{{columnlist}}" 
+        wx:for-item="item" 
+        wx:key="id"
+        bindtap="columnnewTap"
+        data-id="{{item.id}}"
+      >
+        <image src="{{item.cover+'!600X400'}}" lazy-load="true"></image>
+        <view class="column-title">{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

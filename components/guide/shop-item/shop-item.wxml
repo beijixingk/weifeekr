@@ -1,0 +1,10 @@
+<!--components/guide/shop-item/shop-item.wxml-->
+<view class="item" >
+  <view class="item-thumb">
+    <image mode="widthFix" src="{{shop.cover}}!640X360" style="display: block;"/>
+  </view>
+  <view class="item-title txt-center font-sm">{{shop.title}}</view>
+  <view class="area">{{shop.area}} - {{shop.site}}</view>
+  <view class="font-sm price">￥
+    <text class="font-md">{{shop.price}}</text> 起</view>
+</view>

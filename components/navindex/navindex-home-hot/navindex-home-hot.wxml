@@ -1,0 +1,20 @@
+<view class="common-search-entry">
+  <view class="common-search-entry-header">
+    <span class="common-search-entry-header-name">{{title}}</span>
+    <p class="common-search-entry-header-line"></p>
+    <navigator url="" class="common-search-entry-header-more" style="color: rgb(26, 188, 156);">更多</navigator>
+  </view>
+  <view class="common-search-entry-nav">
+    <view wx:for="{{title==='新品&独家'?newProductlist:specialsProductlist}}" wx:key="id" class="common-goods common-search-entry-item">
+      <navigator url="/pages/detail/detail?id={{item.id}}"  >
+        <image src="{{item.cover}}" class="common-goods-img lazyloaded" mode="widthFill"/>
+        <view class="common-goods-content one-line-ellipsis">{{item.productName}}</view>
+        <view class="common-goods-price" style="color: rgb(26, 188, 156);">
+          <span class="common-goods-num">¥ {{item.currentPrice}} </span>起
+          <span class="common-goods-unit">
+            <span class="common-goods-bold">/</span>{{unitCount-1 ? ''+unitCount+' / ':''}}{{item.unit}}</span>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>

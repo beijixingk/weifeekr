@@ -1,0 +1,33 @@
+/* pages/navindex/navindex.wxss */
+view{
+  overflow:visible;
+}
+.nav-common-base{
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 100%;
+}
+.nav-theme-entry{
+  width:100%;
+  box-sizing: border-box;
+}
+.nav-story-entry {
+  box-sizing: border-box;
+}
+.maybe-like{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+my-maybe-like{
+  width: 100%;
+  box-sizing: border-box;
+}
+/* .nav-maybe-like{
+  height: rpx;
+} */
+.scroll-wrap{
+  height: 100%;
+}

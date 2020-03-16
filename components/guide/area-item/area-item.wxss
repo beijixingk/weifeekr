@@ -1,0 +1,65 @@
+/* components/guide/area-item/area-item.wxss */
+.area-list {
+  background: #fff;
+  margin-top: 24rpx;
+}
+.item-container{
+  padding: 24rpx;
+}
+.header-title-wrap {
+  color: #2D2D2D;
+  padding: 36rpx 0;
+  line-height: 1.8;
+  text-align: center
+}
+.header-title-wrap .section-title {
+  vertical-align: middle;
+  font-size: 28rpx;
+}
+.header-title-wrap .sub-title {
+  color: #666;
+  font-size: 24rpx !important;
+  text-align: center;
+}
+.area-list-container{
+  display:flex;
+  flex-wrap: wrap;
+}
+.area-list .item-container .item {
+  display: block;
+  width: 32%;
+  margin-right: 2%;
+  margin-left: 0;
+  margin-bottom: 36rpx;
+  line-height: 1.8;
+}
+.area-list .item-container .item:nth-child(3n) {
+  margin-right: 0;
+}
+.item-container .item image {
+  max-height: 216rpx;
+  width:100%;
+  border: 0;
+}
+.item-container .item .item-title {
+  color: #2D2D2D;
+  padding: 12rpx 0 0;
+  text-align: center;
+  font-size: 28rpx;
+}
+.area-list.area-other-list .item image {
+  opacity: .8;
+}
+.area-list.area-other-list .item {
+  position: relative;
+  background: #000;
+}
+.area-list.area-other-list .item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}

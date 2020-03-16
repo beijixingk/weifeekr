@@ -1,0 +1,8 @@
+.more{
+  color: #1ABC9C;
+  display: block;
+  padding: 0px 0 20px;
+  font-size: 14px;
+  text-align:center;
+  font-weight:normal;
+}

@@ -1,0 +1,31 @@
+/* component/detail-header/detail-header.wxss */
+.product-detail-head {
+    position: relative;
+    padding: 0 24rpx;
+    text-align: center;
+    background-color: #fff;
+}
+.product-detail-art {
+    font-size: 34rpx;
+    line-height:50rpx;
+    padding-top: 25rpx;
+    padding-bottom: 32rpx;
+}
+.product-detail-name {
+    font-size: 22rpx;
+    color: #666;
+}
+.product-detail-price {
+    margin-top:20rpx;
+    padding-bottom: 38rpx;
+    line-height:30rpx;
+    color: rgb(26, 188, 156);
+}
+.product-detail-price .price {
+    font-size: 38rpx;
+    font-weight: bolder;
+    font-family: PingFangSC-Regular,Source Han Sans,Helvetica,Droid Sans,Arial,sans-serif;
+}
+.product-detail-price .unit {
+    font-size: 22rpx;
+}

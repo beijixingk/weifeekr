@@ -1,0 +1,22 @@
+<!--component/navindex-footer-box/navindex-footer-box.wxml-->
+<view class="footer-box">
+  <view class="footer-box-brand">
+    <view>
+      <text class="iconfont footer-box-logo icon-feekr"></text>
+    </view>
+    <view class="flex-center-v footer-box-link">
+      ©2016Feekr
+      <text>浙ICP备13003499</text>
+      <!---->
+    </view>
+  </view>
+  <view class="footer-box-vcode">
+    <image src="/resource/images/feekr_code.png" mode="widthFix"/>
+    <view>长按二维码或添加微信：feekr_trip</view>
+    <view>关注feekr小众旅行, 获取最新玩法攻略</view>
+  </view>
+  <view class="footer-box-btns">
+    <text class="base-bg">关于Feekr</text>
+    <text class="base-bg">联系我们</text>
+  </view>
+</view>

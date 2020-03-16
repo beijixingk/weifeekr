@@ -1,0 +1,5 @@
+<view class="new_title">
+  <text class="header-line"></text>
+  <text class="header-title">{{title}}</text>
+  <text class="sub-title">{{subtitle}}</text>
+</view>

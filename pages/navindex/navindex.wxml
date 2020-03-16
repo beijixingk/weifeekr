@@ -1,0 +1,26 @@
+<!--pages/navindex/navindex.wxml-->
+<scroll-view class="scroll-wrap" scroll-y="true" bindscrolltolower="handleToLower"  lower-threshold="50">
+  <view class="container">
+    <my-swiper></my-swiper>
+    <my-nav></my-nav>
+    <view class="nav-home-hot nav-common-base">
+      <my-home-hot title="{{title[0]}}"></my-home-hot>
+      <my-home-hot title="{{title[1]}}"></my-home-hot>
+    </view>
+    <view class="nav-theme-entry nav-common-base">
+      <my-theme-header title="主题推荐" desc="给出最新的出游主题"></my-theme-header>
+      <my-theme-list></my-theme-list>
+    </view>
+    <view class="nav-story-entry nav-common-base">
+      <my-theme-header title="攻略资讯" desc="推荐城市深度游攻略"/>
+      <my-story-list></my-story-list>
+    </view>
+    <view class="nav-maybe-like nav-common-base">
+      <my-theme-header title="猜你喜欢" desc="这些也许是你喜欢的"/>
+      <view class="maybe-like">
+        <my-maybe-like likelist="{{likelist}}"/>
+      </view>
+    </view>
+    <!-- <my-footer-box/> -->
+  </view>
+</scroll-view>

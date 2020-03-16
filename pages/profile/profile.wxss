@@ -1,0 +1,74 @@
+.wrap {
+    width: 100%;
+    min-height: 100%;
+}
+.inner-wrap {
+    width: 100%;
+}
+
+
+.back-title {
+    text-align: center;
+    position: relative;
+    padding: 10rpx;
+    font-size: 17rpx;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.nav-space {
+    padding-bottom: 60px;
+}
+.user-wrap .user-home .user-info, .user-wrap .user-home .user-menu {
+    font-size: 28rpx;
+    position: relative;
+    padding-left: 140rpx;
+}
+.user-wrap .user-home .user-info {
+    padding: 40rpx 0;
+    background: #fff;
+    border-bottom: 1px solid #F5F5F5;
+}
+.user-wrap navigator {
+    color: #333;
+}
+.table-mode {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.user-wrap .user-home .menu-group {
+    background: #fff;
+    margin-top: 15rpx;
+    border-top: 1px solid #F5F5F5;
+}
+.user-wrap .user-home .user-info .table-cell:nth-child(1), .user-wrap .user-home .user-info .table-cell:nth-child(2) {
+    width: auto;
+    padding: 0;
+}
+
+.table-mode .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.user-wrap .user-home .avatar {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.txt-left {
+    text-align: left !important;
+}
+.user-wrap .user-home .user-info .nickname {
+    font-size: 32rpx;
+}
+.user-wrap .user-home .menu-group {
+    background: #fff;
+    margin-top: 15rpx;
+    border-top: 1px solid #F5F5F5;
+}
+.user-wrap .user-home .user-menu .table-cell:nth-child(1) {
+    width: 20%;
+    box-sizing: border-box;
+}

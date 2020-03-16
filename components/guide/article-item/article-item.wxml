@@ -1,0 +1,5 @@
+<!--components/guide/article-item/article-item.wxml-->
+<view class="item {{num==0?'margin-top':''}}" >
+  <image src="{{article.cover}}!600X400" style="display: block;"/>
+  <view class="title">{{article.title}}</view>
+</view>

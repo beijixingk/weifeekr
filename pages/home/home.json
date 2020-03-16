@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "swipers":"../../components/homeComponents/swiper/swiper",
+    "list-title": "../../components/homeComponents/ListTitle/ListTitle",
+    "list-more": "../../components/homeComponents/ListMore/ListMore",
+    "product-list": "../../components/homeComponents/productlist/productlist",
+    "selected-list": "../../components/homeComponents/selectedlist/selectedlist",
+    "new-list": "../../components/homeComponents/newlist/newlist",
+    "city-list": "../../components/homeComponents/citylist/citylist",
+    "loading":"../../components/homeComponents/loading/loading"
+  }
+}

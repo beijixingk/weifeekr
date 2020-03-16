@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "detail-swiper":"/components/navindex/detail-swiper/detail-swiper",
+    "detail-header":"/components/navindex/detail-header/detail-header",
+    "detail-menu":"/components/navindex/detail-menu/detail-menu",
+    "detail-pro-guide":"/components/detail/detail-product-guide/detail-product-guide",
+    "detail-pro-desc":"/components/detail/detail-product-desc/detail-product-desc",
+    "detail-wx":"/components/detail/detail-wx/detail-wx",
+    "detail-like":"/components/detail/detail-like/detail-like",
+    "detail-footer":"/components/detail/detail-footer/detail-footer"
+  }
+}

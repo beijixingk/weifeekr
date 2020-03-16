@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/home/morecolumn/morecolumn",
+    "pages/home/columnnew/columnnew",
+    "pages/home/morenew/morenew",
+    "pages/navindex/navindex",
+    "pages/detail-suite/detail-suite",
+    "pages/productSearch/productSearch",
+    "pages/newsSearch/newsSearch",
+    "pages/guide/guide",
+    "pages/detail-guide/detail-guide",
+    "pages/searchRes/searchRes",
+    "pages/profile/profile",
+    "pages/register/register",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/newdetail/newdetail",
+    "components/guide/area-item/area-item",
+    "pages/newsSeachRes/newsSearchRes",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/navindex/navindex",
+        "text": "度假"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "攻略"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

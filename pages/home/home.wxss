@@ -1,0 +1,126 @@
+/* pages/home/home.wxss */
+.home_main{
+  width: 100%;
+  height: 100%;
+  background:#F6F6F6;
+  position: relative;
+}
+.home_main .search{
+  width:calc(100%-20px);
+  background:#F6F6F6;
+  padding:10px;
+  height: 36.7px;
+  position: relative;
+}
+.home_main .search input{
+  border:2px solid #e8e8e8;
+  border-radius: 14.04rpx;
+  /* margin:0 37.44rpx 0 18.72rpx; */
+  padding-left: 20px;
+  background:#fff;
+  color:#888;
+  font-weight:normal;
+  text-align: center;
+  height: 72.47rpx;
+  position: relative;
+  font-size: 12px;
+}
+.home_main .search input image{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 155rpx;
+  top: 14.04rpx;
+}
+/* nav */
+.nav{
+  width:100%;
+  height:80px;
+  background:#fff;
+  padding:15px 0 0;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.nav .nav_item{
+  flex:1;
+  text-align:center;
+  list-style-type:none;
+  width:100%;
+  display:block;
+}
+.nav .nav_item image{
+  display:inline-block;
+  width:93.6rpx;
+  height:93.6rpx;
+}
+.nav .nav_item text{
+  display:block;
+  font-size:12px;
+  font-weight:normal;
+  margin-top:9.36rpx;
+  color:#2d2d2d;
+}
+/* home_list */
+.home_list{
+  background: #F6F6F6;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+/* list_new */
+.home_list .list_new{
+  background: #fff;
+  padding-top: 5px;
+}
+.home_list view{
+  margin-top:11px;
+}
+
+.home_list .new_container{
+  /* margin-top: 11px;
+  padding-top: 11px; */
+  padding: 14px 11px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #F2F2F2;
+}
+
+/* list_product */
+.home_list{
+  background: #F6F6F6;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+/* list_new */
+
+.list_product{
+  background: #fff;
+  padding-top: 5px;
+  width: 100%;
+}
+/* city-list */
+.list-city{
+  background: #fff;
+  width: 100%;
+  /* height: 100%; */
+  padding-top:10px; 
+}
+
+
+/*  list-seleccted*/
+.list-selected{
+  padding-bottom:3px; 
+  padding-top:8px; 
+  color: #2d2d2d;
+  background: #fff;
+  width: 100%;
+  height: auto;
+
+  /* margin: 0 auto; */
+}
+.recommend{
+  border-top: 1px solid #2d2d2d;
+}

@@ -1,0 +1,25 @@
+<view class="morenew">
+  <view class="morenew-head">
+    最新旅行资讯
+  </view>
+  <view class="morenew-container">
+    <view 
+      class="morenew-item"
+      wx:for="{{morenewlist}}"
+      wx:for-item="item"
+      wx:key="id"
+      bindtap="handleTap"
+      data-itemid="{{item.id}}"
+    >
+      <image data-imgindex="{{index}}" lazy-load="true" src="{{item.cover+'!300X300'}}" binderror="imgError" ></image>
+      <view class="item-right">
+        <view class="right-title">{{item.title}}</view>
+        <view class="right-bottom">
+          <text>{{item.viewCount}}人阅读</text>
+          <view class="separate">/</view>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

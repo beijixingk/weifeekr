@@ -1,0 +1,21 @@
+/**app.wxss**/
+@import './weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+@import './pages/assets/wxParse/wxParse.wxss';
+page{
+  height: 100%;
+}
+my-swiper{
+  width:100%;
+}
+detail-swiper{
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 

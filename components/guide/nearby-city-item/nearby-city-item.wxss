@@ -1,0 +1,16 @@
+/* components/guide/nearby-city-item/nearby-city-item.wxss */
+.flex-item{
+  width:100%;
+}
+image{
+  width:100%;
+  border:0;
+}
+.item-title {
+  margin-top: 19.2rpx;
+  font-size:26rpx;
+  text-align: center;
+}
+text{
+  font-weight: bold;
+}

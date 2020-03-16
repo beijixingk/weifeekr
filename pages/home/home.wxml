@@ -1,0 +1,55 @@
+<!--pages/home/home.wxml-->
+<!-- <loading></loading> -->
+<view class="home_main">
+  <swipers></swipers>
+  <view class="search">
+    <input auto-focus placeholder="搜索目的地/攻略/旅行资讯">
+    <image src="../assets/images/sousuo.png"></image>
+    </input>
+  </view>
+  <view class="nav">
+    <view class="nav_item">
+      <image src="../assets/images/gonglve.png"></image>
+      <text>攻略</text>
+    </view>
+    <view class="nav_item">
+      <image src="../assets/images/dujia.png"></image>
+      <text>度假</text>
+    </view>
+    <view class="nav_item">
+      <image src="../assets/images/huwai.png"></image>
+      <text>玩乐</text>
+    </view>
+    <view class="nav_item">
+      <image src="../assets/images/meiwu.png"></image>
+      <text>美物</text>
+    </view>
+    <view class="nav_item">
+      <image src="../assets/images/yanjiusuo.png"></image>
+      <text>研究所</text>
+    </view>
+  </view>
+  <view class="home_list">
+    <view class="list_new">
+      <list-title title="最新旅行资讯" subtitle="给你最新的旅行热点"></list-title>
+      <view class="new_container">
+       <new-list></new-list>
+      </view>
+      <list-more more="更多旅行资讯" bindtap="morenewTap"></list-more>
+    </view>
+    <view class="list_product">
+      <list-title title="当季特惠" subtitle="本季度最优惠的出游商品"></list-title>
+      <product-list></product-list>
+    </view>
+    <view class="list-city">
+      <list-title title="目的地推荐" subtitle="开启城市深度游攻略"></list-title>
+      <city-list></city-list>
+      <list-more more="更多目的地推荐"></list-more>
+    </view>
+    <view class="list-selected">
+      <list-title title="编辑精选" subtitle="推荐最具小众特色的旅行体验"></list-title>
+      <selected-list></selected-list>
+      <list-more more="更多栏目推荐" class="recommend" bindtap="morecolumntap" ></list-more>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/productSearch/productSearch.wxml-->
+<view class="search-page">
+  <search-bar hasSearched='false' ></search-bar>
+  <view class="search-label">
+    <view class="search-label-type">
+      <text class="search-label-line">—</text> 历史搜索
+      <text class="search-label-line">—</text>
+      <mp-icon icon="delete" class="search-label-del"></mp-icon>
+    </view>
+    <view class="search-label-container">
+      <view wx:for="{{searchHistory}}" wx:key="{{index}}" class="search-label-word">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <view class="search-label">
+    <view class="search-label-type">
+      <text class="search-label-line">—</text> 热门搜索
+      <text class="search-label-line">—</text>
+    </view>
+    <view class="search-label-container">
+      <view wx:for="{{hotSearchList}}" wx:key="{{index}}" class="search-label-word">
+        {{item}}
+      </view>
+    </view>
+  </view>
+</view>

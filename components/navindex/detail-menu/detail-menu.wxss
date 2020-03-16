@@ -1,0 +1,16 @@
+/* component/detail-menu/detail-menu.wxss */
+.product-detail-menu{
+  display: felx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 26rpx;
+  padding: 0 42rpx;
+  line-height: 12rpx;
+  width: 100%;
+}
+.menu1{
+  margin-right: 400rpx;
+}
+
+

@@ -1,0 +1,19 @@
+<import src="../../assets/wxParse/wxParse.wxml"/>
+<view class="newdetail">
+  <view class="title">{{detailOthers.title}}</view>
+  <view class="author">
+    <view class="author-left" wx:if="{{detailOthers.authAvatar}}">
+      <image src="{{detailOthers.authAvatar}}" ></image>
+      <text>{{detailOthers.nickname}}</text>
+    </view>
+    <view class="author-left" wx:else>
+      <image src="https://res01.feekr.com/logo/feekr-logo-180X180.jpg" ></image>
+      <text>Feekr旅行</text>
+    </view>
+    <view class="author-right">
+      <view>总阅读数</view>
+      <view>{{detailOthers.viewCount}}</view>
+    </view>
+  </view>
+  <template is="wxParse" wx:key="id" data="{{wxParseData:detail.nodes}}"/>
+</view>

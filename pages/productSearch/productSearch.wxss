@@ -1,0 +1,45 @@
+/* pages/productSearch/productSearch.wxss */
+.search-page{
+  background: #f6f6f6;
+  width: 100%;
+  min-height: 100vh;
+}
+.search-label {
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding-bottom: 25rpx;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.search-label-type {
+  position: relative;
+  padding-top: 10rpx;
+  font-size: 26rpx;
+  line-height: 44rpx;
+  text-align: center;
+  color: #999;
+}
+.search-label-line {
+  margin-left: 18rpx;
+  margin-right: 18rpx;
+}
+.search-label-del {
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+  line-height: 44rpx;
+}
+.search-label-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-label-word {
+  padding: 8rpx;
+  margin-top: 14rpx;
+  margin-right: 16rpx;
+  border-radius: 6rpx;
+  border: 1rpx solid #ccc;
+  font-size: 26rpx;
+  line-height: 44rpx;
+  color: #6a6a6a;
+}

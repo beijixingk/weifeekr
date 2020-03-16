@@ -1,0 +1,14 @@
+<view class="city-list">
+  <view 
+    class="city-item" 
+    wx:for="{{citylist}}"
+    wx:for-item="item"
+    wx:key="id"
+    >
+    <view class="thumb-wrap">
+      <image alt='图片' class="city-cover lazy" src="{{item.cover+'!621X327'}}" />
+      <view class="font-lg">{{item.cityName}}</view>
+    </view>
+    <view class="font-sm">{{item.fxb}}位当地飞小编推荐</view>
+  </view>
+</view>

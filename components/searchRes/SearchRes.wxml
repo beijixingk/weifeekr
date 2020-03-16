@@ -1,0 +1,72 @@
+<!--components/searchRes/SearchRes.wxml-->
+<view class="search-select-box">
+  <view class="search-select-options">
+    <view class="search-select-items {{styleshow?'selected-label':''}}">
+      {{styleTxt}}
+      <mp-icon icon="arrow" color="#888" size="{{12}}" class="iconfont {{styleshow?'down':'up'}}" bindtap="handleStyleBox"></mp-icon>
+    </view>
+    <view class="search-select-items {{cityshow?'selected-label':''}}">
+      {{areaTxt}}
+      <mp-icon icon="arrow" color="#888 " size="{{12}}" class="iconfont {{cityshow?'down':'up'}}" bindtap="handleCityBox"></mp-icon>
+    </view>
+    <view class="search-select-items search-select-no-border {{sortshow?'selected-label':''}}">
+      {{sortTxt}}
+      <mp-icon icon="arrow" color="#888 " size="{{12}}" class="iconfont {{sortshow?'down':'up'}}" bindtap="handleSortBox"></mp-icon>
+    </view>
+  </view>
+  <view wx:if="{{styleshow}}" class="search-select-detail">
+    <view 
+      wx:for="{{styleList}}" 
+      wx:key="{{item.id}}" 
+      data-label="{{item.name}}" 
+      data-id="{{item.id}}" 
+      bindtap="changeStyle"
+      class="search-select-label {{styleId===item.id ?'selected-label':''}}" 
+    >
+      {{item.name}}
+    </view>
+  </view>
+  <view wx:if="{{sortshow}}" class="search-select-detail">
+    <view 
+      wx:for="{{sortsList}}" 
+      wx:key="{{item.id}}" 
+      data-label="{{item.name}}" 
+      data-id="{{item.id}}" 
+      bindtap="changeSort"
+      class="search-select-label {{sortId===item.id ?'selected-label':''}}">
+      {{item.name}}
+    </view>
+  </view>
+  <view wx:if="{{cityshow}}" class="search-select-detail search-select-sub-box">
+    <view class="search-select-sub">
+      <view data-label="全部" data-id="0" class="search-select-label base-color {{citySortId==0?'selected-label':''}}" bindtap="changeCitySort">
+        全部
+      </view>
+      <view data-label="国内" data-id="1" class="search-select-label {{citySortId==1?'selected-label':''}}" bindtap="changeCitySort">
+        国内
+      </view>
+      <view data-label="国外" data-id="2" class="search-select-label {{citySortId==2?'selected-label':''}}" bindtap="changeCitySort">
+        国外
+      </view>
+    </view>
+    <scroll-view scroll-y="true" class="search-select-sub-detail">
+      <view 
+        wx:for="{{cityList}}" 
+        wx:key="{{item.id}}" 
+        data-label="{{item.city}}" 
+        data-id="{{item.id}}" 
+        bindtap="changeCity"
+        class="search-select-label search-select-sub-label {{cityId==item.id?'selected-label':''}}"
+      >
+        <text>{{item.city}}</text>
+        <text 
+          wx:if="{{item.area}}" 
+          data-label="{{item.area}}" 
+          class="search-select-area"
+        > 
+          ({{item.area}})
+        </text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

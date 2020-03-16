@@ -1,0 +1,57 @@
+<view class="wrap user-wrap">
+  <view class="inner-wrap">
+    <view class="user-home nav-space">
+      <navigator class="user-info table-mode" href="/user/author?id=73022&amp;pv_from=mypage">
+        <view class="table-cell">
+
+          <image src="https://photo02.feekr.com/2019/11/19/11410065ba25fe87b0b8bf6f718372e7d4bb99.jpg!180X180" class="avatar"/>
+
+        </view>
+        <view class="table-cell txt-left">
+          <view class="nickname">{{username}}</view>
+
+        </view>
+        <view class="table-cell iconfont icon-right-jiantou"></view>
+      </navigator>
+
+
+      <view class="menu-group">
+
+        <navigator class="user-menu table-mode" href="/user/comment?id=73022">
+          <mp-icon icon="email" extClass="table-cell iconfont icon-email txt-right"/>
+          <view class="table-cell menu-name txt-left">消息
+          </view>
+          <mp-icon icon="arrow" type="outline" size="15" extClass="table-cell iconfont icon-right-jiantou"/>
+        </navigator>
+
+        <navigator class="user-menu table-mode" href="/user/favourite?id=73022">
+          <mp-icon icon="star" extClass="table-cell iconfont icon-wujiaoxingkong1 txt-right"/>
+          <view class="table-cell menu-name txt-left">收藏
+
+          </view>
+          <mp-icon icon="arrow" type="outline" size="15" extClass="table-cell iconfont icon-right-jiantou"/>
+        </navigator>
+
+      </view>
+
+      <view class="menu-group">
+
+        <navigator class="user-menu table-mode" href="/user/setting?id=73022">
+          <mp-icon icon="setting" extClass="table-cell iconfont icon-Set_up txt-right"/>
+          <view class="table-cell menu-name txt-left">设置
+
+          </view>
+          <mp-icon icon="arrow" type="outline" size="15" extClass="table-cell iconfont icon-right-jiantou"/>
+        </navigator>
+
+        <navigator class="user-menu table-mode" href="/user/feedback?id=73022">
+          <mp-icon icon="pencil" extClass="table-cell iconfont icon-icon-fankui txt-right"/>
+          <view class="table-cell menu-name txt-left">反馈
+          </view>
+          <mp-icon icon="arrow" type="outline" size="15" extClass="table-cell iconfont icon-right-jiantou"/>
+        </navigator>
+
+      </view>
+    </view>
+  </view>
+</view>

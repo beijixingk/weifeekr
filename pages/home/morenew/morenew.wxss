@@ -1,0 +1,57 @@
+/* pages/home/morenew/morenew.wxss */
+.morenew{
+
+}
+.morenew-head{
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  font-size: 17px;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  color: #2d2d2d;
+}
+.morenew-container{
+  padding: 14px 11px;
+  border-bottom: 1px solid #F2F2F2;
+  box-sizing: border-box;
+}
+.morenew-container .morenew-item{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.morenew-container .morenew-item+.morenew-item {
+  border-top: 1px solid #F2F2F2;
+  margin-top: 11px;
+  padding-top: 11px;
+}
+.morenew-item image{
+  width: 72px;
+  height: 72px;
+  display: block;
+  box-sizing: border-box;
+}
+.morenew-item .item-right{
+  margin-left: 24px;
+  flex: 1;
+
+}
+.morenew-item .item-right .right-title{
+  margin-bottom: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 14px;
+}
+.morenew-item .item-right .right-bottom{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  font-size: 10px;
+  color: #2d2d2d;
+}
+.morenew-item .item-right .right-bottom .separate{
+  margin: 0 10px;
+}

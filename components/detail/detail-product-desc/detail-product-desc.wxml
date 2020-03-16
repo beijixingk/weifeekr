@@ -1,0 +1,36 @@
+<view>
+  <view class="product-detail-tab">
+    <view class="{{currentTab==0?'active':''}}" bindtap="choosetab" data-tab="0">费用包含</view>
+    <view class="{{currentTab==1?'active':''}}" bindtap="choosetab" data-tab="1">产品详情</view>
+    <view class="{{currentTab==2?'active':''}}" bindtap="choosetab" data-tab="2">购买须知</view>
+  </view>
+  <view class="product-detail-desc">
+    <view class="{{currentTab==0?'active product-detail-contain':'product-detail-contain'}}">
+      <!-- <template is="wxParse" data="{{wxParseData:productContain.nodes}}"/> -->
+      <text decode="{{true}}">
+        {{prodesc.productContain}}
+      </text>
+    </view>
+    <view class="{{currentTab==1?'active product-detail-detail':'product-detail-detail'}}">
+      <view id="detailPanelDesc" class="detail-panel-desc">
+        <import src="/pages/assets/wxParse/wxParse.wxml"/>
+        <template is="wxParse" data="{{wxParseData:productDetail.nodes}}"></template>
+      </view>
+    </view>
+    <view class="{{currentTab==2?'active buy-notice':'buy-notice'}}">
+      <view class="buy-notice-head">
+        <view>使用说明</view>
+      </view>
+      <view class="buy-notice-usage">
+        <text decode="{{true}}">{{prodesc.usage}}</text>
+      </view>
+      <view class="buy-notice-head buy-notice-head-rule">
+        <b>改退规则</b>
+      </view>
+      <view class="buy-notice-rule">
+        <text decode="{{true}}">{{prodesc.rule}}</text>
+      </view>
+    </view>
+    <!---->
+  </view>
+</view>

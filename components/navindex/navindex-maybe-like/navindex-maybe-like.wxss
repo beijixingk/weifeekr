@@ -1,0 +1,44 @@
+/* component/navindex-maybe-like/navindex-maybe-like.wxss */
+.maybe-like-item {
+    padding-bottom: 35rpx;
+    width: 49.2%;
+    font-size: 20rpx;
+    line-height: 35rpx;
+    text-align: center;
+}
+.common-goods-img {
+    width: 100%;
+    vertical-align: middle;
+    height: 217.5rpx;
+}
+.common-goods-content {
+    font-weight: normal;
+    margin-top: 12rpx;
+}
+.one-line-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.maybe-like-item .common-goods-price {
+    line-height: 45rpx;
+    color: rgb(26, 188, 156);
+}
+.common-goods-num {
+    font-size: 26rpx;
+    font-weight: bold;
+}
+.common-goods-unit {
+    font-family: PingFangSC;
+}
+.common-goods-price {
+    font-size: 22rpx;
+    line-height: 32rpx;
+}
+.like-item{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 40rpx;
+}

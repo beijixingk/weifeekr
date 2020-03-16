@@ -1,0 +1,54 @@
+/* component/navindex-footer-box/navindex-footer-box.wxss */
+.footer-box {
+    padding-top: 24rpx;
+    padding-bottom: 6rpx;
+    margin-top: 20rpx;
+    margin-bottom: 50rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: #888;
+    background-color: #fff;
+}
+.footer-box-brand {
+    margin: 0 auto;
+    padding: 20rpx 0;
+}
+.footer-box-vcode {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 30rpx;
+    border-bottom: 1px dashed #e8e8e8;
+}
+.footer-box-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30rpx;
+}
+.footer-box-link {
+    position: relative;
+    justify-content: center;
+    display: inline-block;
+    line-height: 40rpx;
+}
+.footer-box-link text {
+    color: #333;
+}
+.footer-box-vcode image {
+    vertical-align: middle;
+    margin: 30rpx auto;
+    width: 200rpx;
+}
+.footer-box-vcode view {
+    line-height: 40rpx;
+}
+.FK .base-bg {
+    background-color: #1abc9c;
+}
+.footer-box-btns text {
+    padding: 12rpx 34rpx;
+    margin: 0 20rpx;
+    font-size: 28rpx;
+    border-radius: 24rpx;
+    color: #fff;
+    background: #1abc9c;
+}

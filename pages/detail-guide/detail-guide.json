@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "theme-item": "../../components/guide/theme-item/theme-item",
+    "path-item": "../../components/guide/path-item/path-item",
+    "article-item": "../../components/guide/article-item/article-item",
+    "shop-item": "../../components/guide/shop-item/shop-item",
+    "nearby-city-item": "../../components/guide/nearby-city-item/nearby-city-item"
+  }
+}

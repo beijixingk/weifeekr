@@ -1,0 +1,6 @@
+<view class="product-guide">
+  <image src="{{userinfo.head}}"/>
+  <view class="userhead">旅游体验师 - {{userinfo.user}}</view>
+  <view class="h4">为你推荐</view>
+  <view class="h5">{{userinfo.recom}}</view>
+</view>

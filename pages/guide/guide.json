@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "guide-recommend": "../../components/guide/guide-recommend/guide-recommend",
+    "area-item": "../../components/guide/area-item/area-item",
+    "guide-search": "../../components/guide/guide-search/guide-search"
+  }
+}

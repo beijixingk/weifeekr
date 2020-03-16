@@ -1,0 +1,157 @@
+<view>
+  <view class="order-confirm">
+    <view class="order-confirm-head order-confirm-common">
+      <image src="https://p-product-pic.feekr.com/2015/11/04/0452505639c762f09bb.jpg" class="order-confirm-img"/>
+      <view class="order-confirm-name three-line-ellipsis">【春节有房】千岛湖滨江希尔顿骑行套餐|含鱼头代金券+卡丁车代金券</view>
+    </view>
+    <view class="order-confirm-group order-confirm-common">
+      <view>
+        <view class="common-flex-between order-confirm-suite">
+          周日-周五 希尔顿客房 1晚券 X 1
+          <view>
+            <view class="text-right">¥&nbsp;699</view>
+          
+          </view>
+        </view>
+        <view class="order-confirm-desc">周日至周五入住希尔顿客房1晚，入住有效期：2020年01月02日至2020年03月31日，不适用日期：春节（1.24-1.30）</view>
+      </view>
+      <view>
+        <view class="common-flex-between order-confirm-suite">
+          周六 希尔顿客房 1晚券 X 1
+          <view>
+            <view class="text-right">¥ 899</view>
+          
+          </view>
+        </view>
+        <view class="order-confirm-desc">周六入住希尔顿客房1晚，入住有效期：2020年01月02日至2020年03月31日，不适用日期：春节（1.24-1.30）</view>
+      </view>
+      <view class="total font-md text-right">合计：
+        <view class="price font-lg base-color">¥ 1598</view>
+      </view>
+    
+    </view>
+    <view class="order-confirm-extra order-confirm-common">
+      <view>优惠券</view>
+      <view class="order-confirm-gt order-confirm-discount empty">未选择</view>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+  
+    <view class="order-confirm-extra order-confirm-common">
+      <text>联系人</text>
+      <view class="order-confirm-gt empty">用于接受订单信息</view>
+      <text class="iconfont icon-jiantou"></text>
+    </view>
+
+    <view class="order-confirm-footer common-layout-fix" style="border-top-color: rgb(26, 188, 156);">
+      <view class="common-flex-between order-confirm-common">
+        <view>合计：
+          <view class="price order-confirm-bold font-lger base-color">¥&nbsp;1598</view>
+        </view>
+      
+      </view>
+      <view class="order-confirm-submit order-confirm-bold" style="background-color: rgb(26, 188, 156);">
+        去支付</view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix" style="display: none;">
+      <view class="coupon fixed-bottom-ios-err order-confirm-fix" style="display: none;">
+        <view class="common-head">
+          <view class="common-head-title">选择优惠券</view>
+          <text data-close="true" data-fixed-close="1" class="iconfont icon-guanbi"></text>
+        </view>
+        <view class="coupon-exchange fixed-bottom-ios-err">
+          <input type="text" placeholder="输入优惠码" class="coupon-exchange-code"/>
+          <button class="coupon-exchange-btn" style="background-color: rgb(26, 188, 156);">兑换</button>
+          <view data-common-mask="true" class="common-mask common-layout-fix common-zoom-in" style="display: none;">
+            <view class="common-confirm">
+              <view class="title"></view>
+              <view class="common-confirm-btns">
+              
+                <button class="yes">确认</button>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="coupon-empty">
+          <text class="iconfont icon-youhuiquan1"></text>
+          <view>没有可用的优惠券</view>
+        </view>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix" style="display: none;">
+      <view class="pay-type" style="display: none;">
+        <menu>
+        
+          <view class="pay-type-item">
+            <navigator href="http://pay.feekr.com/alipay/alipayapi.php?id=" data-href="http://pay.feekr.com/alipay/alipayapi.php?id=" class="pay-type-link">支付宝</navigator>
+          </view>
+          <view class="pay-type-item">
+            <navigator href="http://pay.feekr.com/cmb/cmbapi.php?id=" data-href="http://pay.feekr.com/cmb/cmbapi.php?id=" class="pay-type-link">招商银行</navigator>
+          </view>
+          <view class="pay-type-item">
+            <navigator href="giro" data-href="giro" class="pay-type-link">转账支付</navigator>
+          </view>
+          <view class="pay-type-item">
+            <navigator href="card" data-href="card" class="pay-type-link">礼品卡支付</navigator>
+          </view>
+        </menu>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix" style="display: none;">
+      <view class="contact fixed-bottom-ios-err order-confirm-fix" style="display: none;">
+        <view class="contact-history">
+          <view class="common-head">
+            <view class="common-head-title">历史联系人</view>
+            <text data-close="true" data-fixed-close="1" class="iconfont icon-guanbi"></text>
+          </view>
+          <view class="contact-history-list common-scroll-y"></view>
+          <view class="contact-history-add">
+            <button class="contact-history-btn base-bg">新增联系人</button>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix common-zoom-in" style="background-color: rgba(0, 0, 0, 0.1); display: none;">
+      <view class="common-tips">
+      
+        <view class="order-confirm-tips">
+          <text class="iconfont icon-jiazaizhong"></text>
+        </view>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix common-zoom-in" style="display: none;">
+      <view class="common-confirm">
+        <view class="title"></view>
+        <view class="common-confirm-btns">
+        
+          <button class="yes">确认</button>
+        </view>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix common-zoom-in" style="display: none;">
+      <view class="common-confirm">
+        <view>
+          <view class="title">订单未支付</view>
+          <view class="detail">订单会保留一段时间，请尽快完成支付</view>
+        </view>
+        <view class="common-confirm-btns">
+        
+          <button class="yes">确认</button>
+        </view>
+      </view>
+    </view>
+    <view data-common-mask="true" class="common-mask common-layout-fix cost-detail-mask" style="display: none;">
+      <view class="common-white-bg cost-detail-panel" style="display: none;">
+        <view class="common-head">
+          <view class="common-head-title">费用明细</view>
+          <text data-close="true" data-fixed-close="1" class="iconfont icon-guanbi"></text>
+        </view>
+        <view class="common-flex-between font-md cost-item">券费
+          <view>¥0</view>
+        </view>
+        <view class="common-flex-between font-md cost-item">会员卡费
+          <view class="base-color">¥688</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

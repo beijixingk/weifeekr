@@ -1,0 +1,16 @@
+<view wx:for="{{productlist}}" wx:for-item="items" wx:key="id">
+  <sub-title categoryTitle="{{items.categoryTitle}}"></sub-title>
+  <view class="product_container">
+    <view class="product_item" wx:for="{{items.list}}" wx:for-item="item" wx:key="id">
+      <image src="{{item.productCover+'!200X200'}}" alt="" />
+      <view class='product-title'>{{item.productName}}</view>
+
+      <view class='area'> {{item.productArea}} - {{item.productCity}}</view>
+      <view class="font-sm price">
+        ￥
+        <text class="font-md">{{item.productPrice}}</text> 起
+      </view>
+
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "my-swiper":"/components/navindex/navindex-swiper/navindex-swiper",
+    "my-nav":"/components/navindex/navindex-nav/navindex-nav",
+    "my-home-hot":"/components/navindex/navindex-home-hot/navindex-home-hot",
+    "my-theme-header":"/components/navindex/navindex-header/navindex-header",
+    "my-theme-list":"/components/navindex/navindex-theme-entry-item/navindex-theme-entry-item",
+    "my-story-list":"/components/navindex/navindex-story-entry/navindex-story-entry",
+    "my-maybe-like":"/components/navindex/navindex-maybe-like/navindex-maybe-like",
+    "my-footer-box":"/components/navindex/navindex-footer-box/navindex-footer-box"
+  }
+}

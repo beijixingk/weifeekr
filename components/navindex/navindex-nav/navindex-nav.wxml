@@ -1,0 +1,8 @@
+<view class="search-nav" platform="">
+  <view class="nav-detail" wx:for="{{stylelist}}" wx:key="id">
+    <navigator url="/citylist/{{item.id}}" open-type="redirect">
+      <image src="{{item.icon}}" class="nav-icon"/>
+      <p class="type">{{item.name}}</p>
+    </navigator>
+  </view>
+</view>

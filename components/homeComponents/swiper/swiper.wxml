@@ -1,0 +1,24 @@
+<view 
+class="swiper"
+wx:if="{{background.length>0}}"
+>
+  <swiper 
+  indicator-dots="{{indicatorDots}}" 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}"
+  class="sw"
+  >
+    <block 
+      wx:for="{{background}}" 
+      wx:key="*this"
+      wx:for-item="item"
+      class="swi"
+    >
+      <swiper-item class="img-item">
+        <!-- <view class="swiper-item {{item}}"></view> -->
+        <image src="{{item.thumb}}" class="swiper-img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

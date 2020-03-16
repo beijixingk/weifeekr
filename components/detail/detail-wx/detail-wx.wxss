@@ -1,0 +1,17 @@
+/* components/detail/detail-wx/detail-wx.wxss */
+.product-detail-wxcs {
+    padding: 0 26rpx 15rpx;
+    margin-top: 18rpx;
+    background-color: #fff;
+}
+.product-detail-wxcs {
+    font-size: 28rpx;
+    line-height: 50rpx;
+}
+.product-detail-wxcs .h4 {
+    padding: 20rpx 0;
+    text-align: center;
+}
+.product-detail-wxcs .p {
+    padding-bottom: 20rpx;
+}

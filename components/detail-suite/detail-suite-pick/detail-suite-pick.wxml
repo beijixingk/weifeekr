@@ -1,0 +1,71 @@
+<view>
+  <view>
+    <view data-common-mask="true" class="common-mask common-layout-fix combo-mask" >
+      <view class="combo-main">
+        <view class="combo-head">
+          <view class="combo-name">{{detailheader.productName}}</view>
+          <text data-close="true" class="iconfont icon-guanbi combo-head-icon"></text>
+          <mp-icon icon="close2" bindtap="goBack"/>
+        </view>
+        <view class="combo-suite common-scroll-y">
+          <!-- <view class="combo-item">
+            <view class="suite">
+              <view class="suite-flex suite-pick">
+                <view class="suite-select">
+                <checkbox-group bindchange="checkboxChange" data-price="{{group[0].groupPrice}}" data-id="{{group[0].groupId}}"> 
+                  <checkbox value="{{group[0].groupPrice}}" checked="true" class="iconfont icon-shuruzhengque" >
+                   <view class="flex-shrink suite-price"><text class="suite-name">{{group[0].groupName}}</text><text class="suite-price-num">¥ {{group[0].groupPrice}}</text></view>
+                  </checkbox>
+                </checkbox-group>
+                </view>
+               
+              </view>
+              <view>
+                <view class="suite-flex suite-count" >
+                  <view class="suite-count-text">购买数量:</view>
+                  <view class="{{count-1?'':'disable'}}" data-price="{{group[0].groupPrice}}" bindtap="minusCount">-</view>
+                  <view>
+                    <input type="number" value="{{count}}" class="suite-input"/>
+                  </view>
+                  <view class="{{count >= group[0].personMax ? 'disable':''}}" data-price="{{group[0].groupPrice}}" bindtap="addCount">+</view>
+                </view>
+                <text class="suite-detail" decode="{{true}}">{{group[0].groupDesc}}</text>
+              </view>
+            </view>
+          </view> -->
+          <view class="combo-item" wx:for="{{group}}" wx:key="id">
+            <view class="suite">
+              <view class="suite-flex suite-pick">
+                <view class="suite-select">
+                <checkbox-group data-price="{{item.groupPrice}}" bindchange="checkboxChange" data-id="{{index}}">
+                  <checkbox checked="{{index ===0?true:false}}" value="{{item.groupPrice}}" class="iconfont icon-shuruzhengque">
+                    <view class="flex-shrink suite-price"><text class="suite-name">{{item.groupName}}</text><text class="suite-price-num">¥ {{item.groupPrice}}</text>
+                    </view>
+                  </checkbox>
+                </checkbox-group>
+                </view>
+              </view>
+              <view>
+                <view class="suite-flex suite-count" >
+                  <view class="suite-count-text">购买数量:</view>
+                  <view class="{{count-1?'':'disable'}}" data-price="{{item.groupPrice}}" bindtap="minusCount">-</view>
+                  <view>
+                    <input type="number" value="{{count}}" class="suite-input"/>
+                  </view>
+                  <view class="{{count >= item.personMax ? 'disable':''}}" data-price="{{item.groupPrice}}" bindtap="addCount">+</view>
+                </view>
+                <text class="suite-detail" decode="{{true}}">{{item.groupDesc}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="pipe-confirm common-layout-fix">
+        <view class="price-wrap">
+          <text class="base-color font-16">¥ {{sum}}</text>
+        </view>
+        <button class="base-bg" bindtap="writeInfo">下一步，填写信息</button>
+      </view>
+    </view>
+  </view>
+</view>

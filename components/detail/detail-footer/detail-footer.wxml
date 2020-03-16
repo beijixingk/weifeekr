@@ -1,0 +1,21 @@
+<!--components/detail/detail-footer/detail-footer.wxml-->
+<view class="product-footer common-layout-fix" >
+  <view class="product-footer-nav">
+    <view class="nav-item">
+      <navigator url="/pages/navindex/navindex" class="product-footer-home">
+        <my-icon icon="home" extClass="iconfont icon-shouye-shouye"></my-icon>
+        <view class="item-head">首页</view>
+      </navigator>
+    </view>
+    <view class="product-footer-dot nav-item">
+      <my-icon extClass="iconfont icon-cust" icon="contacts"></my-icon>
+      <view class="item-head">客服</view>
+    </view>
+    <view class="nav-item">
+    <my-icon extClass="iconfont icon-star01" icon="star"></my-icon>
+      <view class="item-head">收藏</view>
+    </view>
+    <view class="product-footer-buy product-footer-heavy">立即预订</view>
+    <!---->
+  </view>
+</view>

@@ -1,0 +1,68 @@
+<!--pages/detail-guide/detail-guide.wxml-->
+<view class="guide-detail-wrap">
+  <view class="city-container">
+    <image src="{{city.cover}}!640X376" />
+    <view class="city-name">
+      <view class="city">{{city.cityName}}</view>
+      <view class="font-md">{{city.fxbCount}}位飞小编为你推荐</view>
+    </view>
+  </view>
+  <view class="guide-nav">
+    <view class="menu" wx:for="{{guidecategoryList}}" wx:key="index">
+      <view class="cate-icon" >
+        <image class="iconfont" src="{{item.img}}"/>
+      </view>
+      <view class="cate-name font-sm">
+        <text class="nav-name">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{themeList.length}}" class="theme-container detail-container">
+    <view class="header-title-wrap">
+      <text>-</text>
+      <text class="section-title">主题推荐</text>
+      <text>-</text>
+    </view>
+    <theme-item wx:for="{{themeList}}" wx:key="index" theme="{{item}}" num="{{index}}"></theme-item>
+    <view class="get-more-list">更多主题推荐</view>
+  </view>
+  <view wx:if="{{pathList.length}}" class="path-container detail-container">
+    <view class="header-title-wrap">
+      <text>-</text>
+      <text class="section-title">路线推荐</text>
+      <text>-</text>
+    </view>
+    <path-item wx:for="{{pathList}}" wx:key="index" path="{{item}}" num="{{index}}"></path-item>
+    <view class="get-more-list">更多路线</view>
+  </view>
+  <view wx:if="{{articleList.length}}" class="article-container detail-container">
+    <view class="header-title-wrap">
+      <text>-</text>
+      <text class="section-title">路线推荐</text>
+      <text>-</text>
+    </view>
+    <article-item wx:for="{{articleList}}" wx:key="index" article="{{item}}" num="{{index}}"></article-item>
+    <view class="get-more-list">更多私藏资讯</view>
+  </view>
+  <view wx:if="{{shopList.length}}" class="shop-container detail-container">
+    <view class="header-title-wrap">
+      <text>-</text>
+      <text class="section-title">玩乐度假</text>
+      <text>-</text>
+    </view>
+    <view class="list-wrap">
+      <shop-item wx:for="{{shopList}}" wx:key="index" shop="{{item}}" class="my-shop-item"></shop-item>
+    </view>
+    <view class="get-more-list">更多玩乐度假</view>
+  </view>
+  <view wx:if="{{nearbyCityList.length}}" class="nearby-city-container detail-container">
+    <view class="header-title-wrap">
+      <text>-</text>
+      <text class="section-title">周边城市</text>
+      <text>-</text>
+    </view>
+    <view class="list-wrap flex-wrap">
+      <nearby-city-item wx:for="{{nearbyCityList}}" wx:key="index" nearbyCity="{{item}}" class="nearby-city-item"></nearby-city-item>
+    </view>
+  </view>
+</view>

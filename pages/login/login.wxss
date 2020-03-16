@@ -1,0 +1,109 @@
+/* pages/login/login.wxss */
+.table-mode {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.wrap{
+  min-height: 100%;
+}
+.table-mode .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.login-wrap {
+    background: #1abc9c;
+    overflow: hidden;
+}
+.login-wrap .logo {
+    width: 40%;
+    margin: 0 auto 1rpx;
+}
+.login-wrap .logo .icon-feekr {
+    text-align: center;
+    font-size: 12rpx;
+    color: #fff;
+    padding: 10rpx 0 15rpx;
+}
+.login-wrap .login-form {
+    margin-top: -3rpx;
+}
+.login-wrap .input-wrap {
+    border-bottom: 1px solid #8adece;
+    width: 90%;
+    margin: 10rpx auto;
+    padding: 0 10rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.login-wrap .login-submit {
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    width: 90%;
+    margin: 30rpx auto 0;
+    font-size: 28rpx;
+    color: #1abc9c;
+    background: #fff;
+    /* padding: 24rpx 0; */
+    border-radius: 15rpx;
+}
+.login-wrap .input-wrap .iconfont {
+    color: #fff;
+    font-size: 20rpx;
+}
+.login-wrap .input-wrap .login-input.account {
+    color: #fff;
+    font-size: 24rpx;
+    display: inline-block;
+    vertical-align: bottom; 
+}
+.login-wrap .input-wrap .login-input.pwd{
+    color: #fff;
+    font-size: 24rpx;
+    display: inline-block;
+    vertical-align: bottom; 
+}
+.login-wrap .input-wrap .login-input {
+    border: 0;
+    padding: 15rpx 10rpx;
+    background: transparent;
+    width: 80%;
+    text-align: left;
+    box-shadow: border-box;
+}
+.login-wrap .go-reg {
+    width: 90%;
+    margin: 0 auto;
+}
+.login-wrap .go-reg navigator {
+    color: #fff;
+    font-size: 24rpx;
+    padding: 10rpx 0;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.login-third-wrap {
+    padding: 50rpx 10rpx 10rpx;
+}
+.table-mode {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.login-third-wrap .login-list {
+    padding: 20rpx 0 10rpx;
+}
+.table-mode .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.iconfont{
+  margin: 10rpx 0;
+}

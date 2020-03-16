@@ -1,0 +1,23 @@
+/* component/detail-swiper/detail-swiper.wxss */
+.nav-swiper{
+  width:100%;
+  position: relative;
+}
+.nav-swiper swiper{
+  width:100%;
+  overflow: hidden;
+}
+.nav-swiper swiper-item{
+  width:100%;
+  overflow: hidden;
+}
+.nav-swiper swiper swiper-item image{
+  width:100%;
+}
+.swiper-counter{
+  position: absolute;
+  bottom: 15rpx;
+  right: 15rpx;
+  color: #fff;
+  font-size: 24rpx;
+}

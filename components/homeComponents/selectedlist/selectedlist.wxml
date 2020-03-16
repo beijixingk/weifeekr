@@ -1,0 +1,38 @@
+<view 
+  wx:for="{{selectedlist}}" 
+  wx:for-item="items"
+  wx:key="id"
+  class="selected-container"
+>
+  <sub-title categoryTitle="{{items.column}}"></sub-title>
+  <view 
+    class="selected-item"
+    wx:for="{{items.article}}"
+    wx:for-item="item"
+    wx:key="id"
+    data-id="{{item.id}}"
+    bindtap="toDetail"
+  >
+    <view class="selected-title">
+      {{item.title}}</view>
+    <view class="flex-wrap">
+      <image alt='图片' class="selected-cover lazy" src="{{item.cover+'!600X400'}}" />
+      <view class="selected">
+        <view class="font-sm">{{item.desc}}</view>
+        <view 
+          class="product-tag"
+          
+        >
+          <view
+            class="product-tag-city"
+            wx:if="{{item.tag.length>0}}"
+            wx:for="{{item.tag}}"
+            wx:for-item="i"
+            wx:key="id"
+          >{{i}}</view>
+          <!-- <view class="product-tag-city"> 湘西</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

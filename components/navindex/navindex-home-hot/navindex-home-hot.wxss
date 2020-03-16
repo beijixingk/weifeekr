@@ -1,0 +1,51 @@
+/* component/navindex-home-hot/navindex-home-hot.wxss */
+.common-search-entry {
+  padding-bottom: 10rpx;
+  overflow: hidden;
+}
+.common-search-entry-header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 45rpx;
+  margin-bottom: 65rpx;
+  height: 26rpx;
+  font-size: 24rpx;
+}
+.common-search-entry-header-name {
+    font-size: 28rpx;
+    padding-right: 2rpx;
+}
+.common-search-entry-header-line {
+  height: 1rpx;
+  flex-grow: 1;
+  background-color: #e8e8e8;
+}
+.common-search-entry-nav {
+    display: flex;
+}
+.common-search-entry-item {
+    width: 32%;
+    margin-right: 2%;
+    text-align: center;
+    font-size: 20rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+.common-goods-img {
+    width: 100%;
+    height:226rpx;
+    vertical-align: middle;
+}
+.common-goods-content {
+  font-weight: normal;
+  margin-top: 12rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* word-break:break-all; */
+  display: block;
+  /* width: 32%; */
+}
+
+

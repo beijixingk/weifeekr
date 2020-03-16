@@ -1,0 +1,11 @@
+<!--component/detail-swiper/detail-swiper.wxml-->
+<view class="nav-swiper">
+  <swiper circular style="height:{{imgHeight}}rpx;" bindchange="bindchange">
+    <swiper-item wx:for="{{productThumblist}}" wx:key="a">
+      <image src="{{item}}" mode="scaleToFill" bindload="imageLoad"></image>
+    </swiper-item>
+  </swiper>
+  <view class="swiper-counter">
+    <text>{{current}}/{{productThumblistlen}}</text>
+  </view>
+</view>

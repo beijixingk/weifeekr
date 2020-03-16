@@ -1,0 +1,15 @@
+<!--components/guide/area-item/area-item.wxml-->
+<view class="area-list {{areaCon.area=='国内其他'?'area-other-list':''}}">
+  <view class="item-container">
+    <view class="header-title-wrap">
+      <text class="section-title">{{areaCon.area}}</text>
+      <view class="sub-title"> {{areaCon.desc}} </view>
+    </view>
+    <view class="area-list-container">
+      <view wx:for="{{areaCon.city}}" wx:key="id" class="item" id="{{item.id}}" bindtap="goToDetail">
+        <image mode="widthFix" src="{{item.cover}}!412X310" style="display: block;"/>
+        <view class="item-title city-title">{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

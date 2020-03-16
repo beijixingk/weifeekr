@@ -1,0 +1,22 @@
+/* component/navindex-header/navindex-header.wxss */
+.common-header {
+    display: flex;
+    align-items: center;
+    padding-top: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.commonent-header-line {
+    width: 8rpx;
+    height: 65%;
+    margin-right: 20rpx;
+    background: rgb(26, 188, 156);
+}
+.commonent-header-type {
+    font-size: 30rpx;
+}
+.commonent-header-add {
+    text-indent: 20rpx;
+    font-size: 24rpx;
+    color: #999;
+}

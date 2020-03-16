@@ -1,0 +1,18 @@
+<view 
+  class="new_item"
+  wx:for="{{newlist}}"
+  wx:for-item="item"
+  wx:key="id"
+  bindtap="toDetail"
+  data-id="{{item.id}}"
+>
+  <image alt='图片' src="{{item.cover+'!300X300'}}" />
+  <view class="new_right">
+    <view class="right_title">{{item.title}}</view>
+    <view class="right_bottom">
+      <text>{{item.viewCount}}人阅读</text>
+      <text class="separate">/</text>
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/detail-suite/detail-suite.wxml-->
+<!-- <suite-nav/>
+<Calendar id="Calendar" bind:select="select"></Calendar> -->
+<suite-detail/>
+
+

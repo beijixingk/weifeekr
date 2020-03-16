@@ -1,0 +1,35 @@
+/* components/guide/shop-item/shop-item.wxss */
+.item {
+  width: 100%;
+}
+
+image{
+  width:100%;
+  border:0;
+}
+.item .item-title {
+  padding: 19.2rpx 0;
+  color: #333;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:24rpx;
+}
+.item .area {
+  color: #666;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size:24rpx;
+  text-align: center;
+}
+.item .price {
+  color: #000;
+  font-size:24rpx;
+  text-align: center;
+}
+.font-md {
+  font-size:26rpx;
+}

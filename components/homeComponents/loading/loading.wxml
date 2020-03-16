@@ -1,0 +1,11 @@
+<!--components/homeComponents/loading/loading.wxml-->
+<view class="loading">
+<view class="loading-main">
+  <view class="spinner">
+    <view class="react1"></view>
+    <view class="react2"></view>
+    <view class="react3"></view>
+  </view>
+  <view class="text">加载中</view>
+</view>
+</view>

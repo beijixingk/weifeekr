@@ -1,0 +1,6 @@
+<!--pages/guide/guide.wxml-->
+<view class="guide-wrap">
+  <guide-search></guide-search>
+  <guide-recommend></guide-recommend>
+  <area-item wx:for="{{cityList}}" wx:key="index" areaCon="{{item}}"></area-item>
+</view>

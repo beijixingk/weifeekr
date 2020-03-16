@@ -1,0 +1,17 @@
+<scroll-view>
+<view class="columnlist">
+  <view 
+    class="column-item"
+    wx:for="{{newList}}"
+    wx:for-item="item"
+    wx:key="id"
+    bindtap="toDetail"
+    data-ids="{{item.id}}"
+  >
+    <image src="{{item.cover+'!600X400'}}" mode="aspectFill"></image>
+    <view class="title">{{item.title}}</view>
+  </view>
+
+  
+</view>
+  </scroll-view>

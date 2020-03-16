@@ -1,0 +1,31 @@
+/* component/detail-suite-nav/detail-suite-nav.wxss */
+.choose-suite-common {
+    background-color: #fff;
+    padding-left:20rpx;
+    padding-right:20rpx;
+    box-sizing: border-box;
+}
+.choose-suite-nav {
+    padding-top:30rpx;
+    padding-bottom:40rpx;
+}
+.choose-suite-label.active {
+    color: #fff;
+    background-color: #1abc9c;
+}
+.choose-suite-label {
+    display: inline-block;
+    padding: 5rpx 20rpx;
+    margin-right:20rpx;
+    margin-top:20rpx;
+    border: 1rpx solid #e8e8e8;
+    border-radius: 8rpx;
+    line-height:50rpx;
+    font-size: 28rpx;
+    background: #fff
+}
+.choose-suite-label.disable {
+    background-color: #e8e8e8;
+    color: #a8a8a8;
+    cursor: auto;
+}

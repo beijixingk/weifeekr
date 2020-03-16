@@ -1,0 +1,23 @@
+<!--pages/searchRes/searchRes.wxml-->
+<view>
+  <view class="fixed-box">
+    <search-bar 
+      hasSearched="true" 
+      keyword="{{keyword}}" 
+      bind:myevent="getKeyword"
+    ></search-bar>
+    <search-result bind:myevent="getProData"></search-result>
+  </view>
+  <view wx:if="{{proList[0]}}" class="search-result-product">
+    <view wx:for="{{proList}}" wx:key="{{item.productId}}" class="pro-item">
+      <image data-src="{{item.productCover}}" src="{{item.productCover}}" class=" lazyloaded" />
+      <view class="pro-desc">{{item.productDesc}}</view>
+      <view class="pro-name">{{item.productName}}</view>
+      <view class="pro-price" style="background-color: rgba(26, 188, 156, 0.8);">¥{{item.productPrice}}</view>
+    </view>
+  </view>
+  <view wx:else class="search-result-empty">
+    <mp-icon icon="error" color="#ccc" size="{{100}}"></mp-icon>
+    <view class="search-result-notice">没有搜索到相关的产品~</view>
+  </view>
+</view>

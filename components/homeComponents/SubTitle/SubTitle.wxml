@@ -1,0 +1,5 @@
+<view class="subtitle">
+  <view class="font-md">{{categoryTitle}}</view> 
+  <view class="line"></view>  
+  <text class="more">更多</text>
+</view>

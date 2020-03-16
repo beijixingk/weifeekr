@@ -1,0 +1,23 @@
+<!--pages/profile/profile.wxml-->
+<view class="wrap table-mode">
+  <view class="inner-wrap login-wrap table-cell">
+    <view class="logo">
+      <view class="iconfont icon-feekr"></view>
+    </view>
+    <form bindsubmit="bindsubmit" class="login-form">
+      <view class="username-wrap input-wrap">
+        <mp-icon icon="me" color="white" extClass="iconfont icon-yonghu"/>
+        <input type="text" name="username" class="account login-input" placeholder="请输入邮箱或手机号" data-type="username"/>
+      </view>
+      <view class="password-wrap input-wrap">
+        <mp-icon icon="lock" color="white" extClass="iconfont icon-mima"/>
+        <input type="password" name="psw" class="pwd login-input" placeholder="请输入密码" data-type="password"/>
+      </view>
+      <button formType="submit" class="login-submit">登录</button>
+    </form>
+    <view class="go-reg clearfix">
+      <navigator url="/findPwd" class="pull-left">忘记密码</navigator>
+      <navigator url="/pages/register/register" class="pull-right">快速注册</navigator>
+    </view>
+  </view>
+</view>
